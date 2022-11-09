@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        run: my-nginx
+        run: my-nginx-one
     spec:
       containers:
       - name: my-nginx
