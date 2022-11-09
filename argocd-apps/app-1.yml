@@ -5,7 +5,6 @@ metadata:
   namespace: argocd
 spec:
   project: my-local-project
-
   source:
     repoURL: https://github.com/ronakforgit/argo-manifest.git
     targetRevision: HEAD
