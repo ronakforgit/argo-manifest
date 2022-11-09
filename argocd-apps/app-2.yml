@@ -4,7 +4,7 @@ metadata:
   name: myapp-argo-application2
   namespace: argocd
 spec:
-  project: default
+  project: my-local-project
 
   source:
     repoURL: https://github.com/ronakforgit/argo-manifest.git
