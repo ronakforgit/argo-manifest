@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-app-2
+  labels:
+    app: nginx-app-2
+spec:
+  selector:
+    matchLabels:
+  replicas: 2
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: nginx-app-2
+    spec:
+      containers:
+        - name: nginx-app-2
+          image: nginx
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080

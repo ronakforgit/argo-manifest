@@ -1,24 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pythonapp
+  name: nginx-app-1
   labels:
-    app: python
+    app: nginx-app-1
 spec:
   selector:
     matchLabels:
-      octopusexport: OctopusExport
   replicas: 2
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: python
-        octopusexport: OctopusExport
+        app: nginx-app-1
     spec:
       containers:
-        - name: pythonflaskapp
+        - name: nginx-app-1
           image: nginx
           imagePullPolicy: IfNotPresent
           ports:
