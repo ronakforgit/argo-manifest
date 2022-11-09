@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/ronakforgit/argo-manifest.git
     targetRevision: HEAD
-    path: my-apps/app-3
+    path: argocd-apps
   destination: 
     server: https://kubernetes.default.svc
     namespace: demoenv
