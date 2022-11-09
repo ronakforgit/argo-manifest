@@ -2,9 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: myapp-argo-application3
-  namespace: my-local-project
+  namespace: argocd
 spec:
-  project: default
+  project:  my-local-project
 
   source:
     repoURL: https://github.com/ronakforgit/argo-manifest.git
