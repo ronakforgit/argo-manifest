@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-nginx-one-two
+  name: my-nginx-one-demo
 spec:
   selector:
     matchLabels:
-      run: my-nginx-one-two
+      run: my-nginx-one-demo
   replicas: 2
   template:
     metadata:
       labels:
-        run: my-nginx-one-two
+        run: my-nginx-one-demo
     spec:
       containers:
       - name: my-nginx
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-nginx-one-two-svc
+  name: my-nginx-one-demo-svc
   labels:
     run: my-nginx
 spec:
@@ -29,7 +29,7 @@ spec:
   - port: 80
     protocol: TCP
   selector:
-    run: my-nginx-one-two
+    run: my-nginx-one-demo
 
 
 
