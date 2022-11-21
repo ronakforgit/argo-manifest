@@ -1,6 +1,6 @@
 ## **argoCD-geting-started**
 
-ArgoCD is an easy to use tool that allows development teams to deploy and manage applications without having to learn a lot about Kubernetes, and without needing full access to the Kubernetes system. 
+ArgoCD  is an easy to use tool that allows development teams to deploy and manage applications without having to learn a lot about Kubernetes, and without needing full access to the Kubernetes system. 
 
 *   We will try to achieve the below  GitOps principles using Argo CD and  Git. 
 *   Declarative: A system managed by GitOps must have its desired state expressed declaratively.
